@@ -1,5 +1,5 @@
+sudo: true
 dist: trusty
-sudo: required
 
 env:
   global:
