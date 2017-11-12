@@ -1,0 +1,20 @@
+{
+  "dist": "trusty",
+  "sudo": "required",
+  "language": "java",
+  "jdk": "oraclejdk8",
+  "install": [
+    "who am i"
+  ],
+  "before_script": [
+    "echo 'before'"
+  ],
+  "script": [
+    "echo 'script'"
+  ],
+  "after_script": [
+    "echo 'after_script'"
+  ],
+  "group": "stable",
+  "os": "linux"
+}
