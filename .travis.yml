@@ -14,6 +14,7 @@ jdk:
 
 install:
   - who am i
+  - sudo snap install luarocks
   - luarocks install luacov
   - luarocks install tapered
 
