@@ -14,8 +14,8 @@ jdk:
 
 install:
   - sudo apt-get --yes install luarocks
-  - luarocks install luacov
-  - luarocks install tapered
+  - sudo luarocks install luacov
+  - sudo luarocks install tapered
 
 before_script:
   - echo 'before'
