@@ -13,7 +13,7 @@ jdk:
   - oraclejdk8
 
 install:
-  - who am i
+  - sudo apt-get --yes install snapd
   - sudo snap install luarocks
   - luarocks install luacov
   - luarocks install tapered
