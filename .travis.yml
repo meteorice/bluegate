@@ -1,20 +1,25 @@
-{
-  "dist": "trusty",
-  "sudo": "required",
-  "language": "java",
-  "jdk": "oraclejdk8",
-  "install": [
-    "who am i"
-  ],
-  "before_script": [
-    "echo 'before'"
-  ],
-  "script": [
-    "echo 'script'"
-  ],
-  "after_script": [
-    "echo 'after_script'"
-  ],
-  "group": "stable",
-  "os": "linux"
-}
+dist: trusty
+sudo: required
+
+env:
+  global:
+    - LUAROCKS=2.4.3
+  matrix:
+    - LUA=lua5.1
+
+language: java
+
+jdk:
+  - oraclejdk8
+
+install:
+  - who am i
+
+before_script:
+  - echo 'before'
+
+script:
+  - echo 'script'
+
+after_script:
+  - echo 'after_script'
